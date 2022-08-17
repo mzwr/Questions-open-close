@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,400;0,500;0,900;1,500;1,600;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  background-color: rgb(235, 235, 235);
+}
+section{
+  text-align: center;
+  margin-top: 130px;
+}
+section article{
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+section h1{
+  color: rgb(200, 173, 20);
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.fixed{
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.fixed span{
+  font-size: 18px;
+}
+p{
+  margin-top: 10px;
+  font-size: 18px;
+  display: none;
+}
+.icons{
+  color:rgb(200, 173, 20);
+}
+button{
+  transition: 0.4s;
+  border: none;
+  background-color: white;
+}
+button:hover{
+  transform: rotate(180deg);
+}
+.show-text p{
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
+@media( max-width:500px ){
+  section{
+    margin-top: 50px;
+  }
+  section article{
+    width: 300px;
+  }
+  section h1{
+    font-size: 28px;
+  }
+  .fixed span{
+    font-size: 12px;
+  }
+  .fixed{
+    border-bottom: 1px solid black;
+  }
+  p{
+    font-size: 12px;
+  }
+}
